@@ -38,6 +38,7 @@ html, body {
  .barnes {
      margin-left: 10px;
  }
+ 
 
  .stores a:hover {
      text-decoration: none;
@@ -55,6 +56,7 @@ html, body {
 
  .book-text h1 {
      font-weight: bolder;
+     border: 2px solid grey;
  }
 
 h1 {

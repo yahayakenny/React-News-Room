@@ -44,9 +44,8 @@ export class BestSellers extends Component {
                                  <a href = {item.buy_links[2].url}><i className="fas fa-book"></i>Barnes and Noble</a> 
                             </div> 
                             <div className = "apple">
-                                <a href = {item.buy_links[1].url}><i className="fab fa-apple"></i>Apple Books</a> 
-                             </div>
-                                
+                                <a href = {item.buy_links[1].url}><i className="fab fa-apple"></i>Apple Books</a><hr/>
+                             </div>                          
                         </div>                   
                      </div>
                     </div>   
