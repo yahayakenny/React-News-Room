@@ -24,9 +24,11 @@ export class Home extends Component {
                   <div className = "container">
                       <div className = "row">
                             <div className = "col-xs-12 col-md-6 col-lg-6">
-                                {this.state.home.map(item => (
+                                {/* {this.state.home.map(item => (
                                     <p>{item.title}</p>
-                                ))}
+                                ))} */}
+
+                                {/* {this.state.home[0].title} */}
                                
                             </div>
                             <div className = "col-xs-12 col-md-6 col-lg-6">
