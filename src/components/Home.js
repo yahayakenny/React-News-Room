@@ -36,9 +36,9 @@ export class Home extends Component {
                                     {
                                         this.state.home.slice(4, 5).map(item => (
                                             <div>
-                                                 <h1>{item.title}</h1>
-                                                <h3>{item.abstract}</h3>
-                                                <h5>{item.byline}</h5>
+                                                <h1>{item.title}</h1>
+                                                <p>{item.abstract}</p>
+                                                <p>{item.byline}</p>
                                             </div>  
                                         ))
                                     }
@@ -57,14 +57,13 @@ export class Home extends Component {
                                         this.state.home.slice(5, 6).map(item => (
                                             <div>
                                                 <h1>{item.title}</h1>
-                                                <h3>{item.abstract}</h3>
-                                                <h5>{item.byline}</h5>                                             
+                                                <p>{item.abstract}</p>
+                                                <p>{item.byline}</p>                                             
                                             </div>  
                                         ))
                                     }
                                 </div>
                             </div>
-
                         </div>
                     }
                 </div>
@@ -75,17 +74,14 @@ export class Home extends Component {
                   <div className = "container">
                       <div className = "row">
                             <div className = "col-xs-12 col-md-4 col-lg-4">                           
-                                {/* {this.state.home.slice(0, 1).map(item => (
-                                    <p>{item.title}</p>
-                                ))}  */}
                                 {this.state.home.slice(0, 1).map(item => (
                                     <div class="card card-topmost">
                                         <img src ={item.multimedia[0].url} class="card-img-top img-fluid" alt="..." />
                                         <div class="card-body "  >
                                              <h4 class="card-title">{item.title}</h4>
-                                             <h5 class="card-text" >{item.abstract}</h5>
-                                             <h6 class="card-text"> {item.byline}</h6>     
-                                             <h6>{item.section}</h6>  
+                                             <p class="card-text" >{item.abstract}</p>
+                                             <p class="card-text"> {item.byline}</p>     
+                                             <p>{item.section}</p>  
                                         </div>
                                    </div> 
                                 ))} 
@@ -96,9 +92,9 @@ export class Home extends Component {
                                         <img src ={item.multimedia[0].url} class="card-img-top img-fluid" alt="..." />
                                         <div class="card-body "  >
                                              <h4 class="card-title">{item.title}</h4>
-                                             <h5 class="card-text" >{item.abstract}</h5>
-                                            <h6 class="card-text"> {item.byline}</h6>     
-                                            <h6>{item.section}</h6>  
+                                             <p class="card-text" >{item.abstract}</p>
+                                            <p class="card-text"> {item.byline}</p>     
+                                            <p>{item.section}</p>  
                                         </div>
                                    </div> 
                                 ))}
@@ -109,9 +105,9 @@ export class Home extends Component {
                                         <img src ={item.multimedia[0].url} class="card-img-top img-fluid" alt="..." />
                                         <div class="card-body card-topmost"  >
                                              <h4 class="card-title">{item.title}</h4>
-                                             <h5 class="card-text" >{item.abstract}</h5>
-                                            <h6 class="card-text"> {item.byline}</h6>     
-                                            <h6>{item.section}</h6>  
+                                             <p class="card-text" >{item.abstract}</p>
+                                            <p class="card-text"> {item.byline}</p>     
+                                            <p>{item.section}</p>  
                                         </div>
                                    </div> 
                                 ))}
@@ -129,25 +125,23 @@ export class Home extends Component {
                                 {this.state.home.slice(8, 9).map(item => (
                                   <img src ={item.multimedia[0].url}  class = "img-fluid"/>
                                 ))} 
-                            </div>
+                            </div><br/><br/>
                             <div className = "col-xs-12 col-md-4 col-lg-4">
                             {this.state.home.slice(9, 10).map(item => (
                                 <div>
-                                    <h1>{item.title}</h1>
-                                   <h3>{item.abstract}</h3>
+                                   <h1>{item.title}</h1>
                                    <h5>{item.byline}</h5>
                                    <h6>{item.published_date}</h6>
                                    <h6>{item.section}</h6>
                                    <a href = {item.url}>Continue Reading</a>
-                                </div>                              
-                                ))}
+                                </div>                            
+                                ))}<br/><br/>
                             </div>
 
                             <div className = "col-xs-12 col-md-4 col-lg-4">
                             {this.state.home.slice(10, 11).map(item => (
                                  <div>
                                  <h1>{item.title}</h1>
-                                <h3>{item.abstract}</h3>
                                 <h5>{item.byline}</h5>
                                 <h6>{item.published_date}</h6>
                                 <h6>{item.section}</h6>
@@ -166,29 +160,21 @@ export class Home extends Component {
                       <div className = "row">
                             <div className = "col-xs-12 col-md-6 col-lg-6">                           
                                 {this.state.home.slice(7, 8).map(item => (
-                                    <div class="card card-bottom">
-                                        <img src ={item.multimedia[0].url} class="card-img-top img-fluid" alt="..." />
-                                        <div class="card-body card-dark"  >
-                                             <h4 class="card-title">{item.title}</h4>
-                                             <h5 class="card-text" >{item.abstract}</h5>
-                                             <h6 class="card-text"> {item.byline}</h6>     
-                                             <h6>{item.section}</h6>  
-                                        </div>
-                                   </div> 
-                                ))} 
+                               <div>
+                                <img src ={item.multimedia[0].url} alt="..." style = {{width : "100%", height: "25rem"}}/>
+                                <h4>{item.title}</h4>
+                                <p >{item.abstract}</p>
+                               </div>
+                                ))} <br/><br/><br/>
                             </div>
                             <div className = "col-xs-12 col-md-6 col-lg-6">
                             {this.state.home.slice(8, 9).map(item => (
-                                    <div class="card card-bottom">
-                                        <img src ={item.multimedia[0].url} class="card-img-top img-fluid" alt="..." />
-                                        <div class="card-body card-dark"  >
-                                             <h4 class="card-title">{item.title}</h4>
-                                             <h5 class="card-text" >{item.abstract}</h5>
-                                            <h6 class="card-text"> {item.byline}</h6>     
-                                            <h6>{item.section}</h6>  
-                                        </div>
-                                   </div> 
-                                ))}
+                                   <div>
+                                   <img src ={item.multimedia[0].url} alt="..." style = {{width : "100%", height: "25rem"}}/>
+                                   <h4>{item.title}</h4>
+                                   <p >{item.abstract}</p>
+                                  </div>
+                                ))}<br/><br/><br/>
                             </div>
                         </div>
                   </div>     
@@ -207,8 +193,8 @@ export class Home extends Component {
                                         <div class = "col-md-6 col-lg-6">
                                         <div class="card height">
                                             <div class="card-body bg-light text-dark">
-                                                <h3 class="card-title">{item.title}</h3>
-                                                <h4 class="card-text">{item.abstract}.</h4>
+                                                <h4 class="card-title">{item.title}</h4>
+                                                <h6 class="card-text">{item.abstract}.</h6>
                                                 <a href={item.url} class="card-link">Continue</a> 
                                             </div>
                                         </div>
@@ -217,8 +203,8 @@ export class Home extends Component {
                                         <div class = "col-md-6 col-lg-6">
                                         <div class="card height">
                                             <div class="card-body bg-light text-dark">
-                                                <h3 class="card-title">{item.title}</h3>
-                                                <h4 class="card-text">{item.abstract}.</h4>
+                                                <h4 class="card-title">{item.title}</h4>
+                                                <h6 class="card-text">{item.abstract}.</h6>
                                                 <a href={item.url} class="card-link">Continue</a> 
                                             </div>
                                         </div>
