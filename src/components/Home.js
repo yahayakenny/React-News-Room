@@ -21,7 +21,7 @@ export class Home extends Component {
             <div>
                 <div>
                     {this.state.home.slice(19, 20).map(item =>(
-                        <img src ={item.multimedia[0].url}  class = "img-fluid hero-img"/>
+                        <img src ={item.multimedia[0].url}  class = "img-fluid hero-img" alt = "#"/>
 
                     ))
                         
@@ -47,7 +47,7 @@ export class Home extends Component {
                                     {
                                         this.state.home.slice(4, 5).map(item => (
                                             <div>
-                                                 <img src = {item.multimedia[0].url} class  = "img-topmost" />
+                                                 <img src = {item.multimedia[0].url} class  = "img-topmost" alt = "#"/>
                                             </div>  
                                         ))
                                     }
@@ -123,7 +123,7 @@ export class Home extends Component {
                       <div className = "row">
                             <div className = "col-xs-12 col-md-4 col-lg-4">                           
                                 {this.state.home.slice(8, 9).map(item => (
-                                  <img src ={item.multimedia[0].url}  class = "img-fluid"/>
+                                  <img src ={item.multimedia[0].url}  class = "img-fluid" alt = "#"/>
                                 ))} 
                             </div><br/><br/>
                             <div className = "col-xs-12 col-md-4 col-lg-4">
@@ -232,27 +232,10 @@ export class Home extends Component {
                   </div>     
                }
                 </div> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             </div>
         )
     }
 }
-
-
-
 
 export default Home
 

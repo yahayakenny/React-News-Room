@@ -1,9 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios';
 
-
 export class BestSellers extends Component {
-
     state = {
         books : []
     }
@@ -24,7 +22,7 @@ export class BestSellers extends Component {
                  <div className = "container book">
                      <div className = "row">
                      <div className = "col-sm-12 col-xs-12 col-md-6">
-                        <img src = {item.book_image} class = "image"/>  
+                        <img src = {item.book_image} class = "image" alt = ""/>  
                      </div>
                      <div className = "col-sm-12 col-xs-12 col-md-6">
                         <h1>Title: {item.title}</h1>

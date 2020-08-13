@@ -32,9 +32,7 @@ export class Popular extends Component {
                             </div>
                         </div><br/><br/>
                     </div>
-
-        ))}
-             
+        ))} 
             </div>
         )
     }
