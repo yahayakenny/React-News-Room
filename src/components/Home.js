@@ -80,8 +80,7 @@ export class Home extends Component {
                                         <div class="card-body "  >
                                              <h4 class="card-title">{item.title}</h4>
                                              <p class="card-text" >{item.abstract}</p>
-                                             <p class="card-text"> {item.byline}</p>     
-                                             <p>{item.section}</p>  
+                                             <p class="card-text"> {item.byline}</p>                                                
                                         </div>
                                    </div> 
                                 ))} 
@@ -93,8 +92,7 @@ export class Home extends Component {
                                         <div class="card-body "  >
                                              <h4 class="card-title">{item.title}</h4>
                                              <p class="card-text" >{item.abstract}</p>
-                                            <p class="card-text"> {item.byline}</p>     
-                                            <p>{item.section}</p>  
+                                            <p class="card-text"> {item.byline}</p>                                     
                                         </div>
                                    </div> 
                                 ))}
@@ -106,8 +104,7 @@ export class Home extends Component {
                                         <div class="card-body card-topmost"  >
                                              <h4 class="card-title">{item.title}</h4>
                                              <p class="card-text" >{item.abstract}</p>
-                                            <p class="card-text"> {item.byline}</p>     
-                                            <p>{item.section}</p>  
+                                            <p class="card-text"> {item.byline}</p>                                                  
                                         </div>
                                    </div> 
                                 ))}
