@@ -10,7 +10,6 @@ export class Home extends Component {
     componentDidMount() {
         axios.get('https://api.nytimes.com/svc/topstories/v2/home.json?api-key=OtN5TgEakuRqnuUsHHxWTfMISpfrrAV7')
         .then (res => {
-            console.log(res.data.results)
             const getHome = res.data.results;
             this.setState({home: getHome})           
         })
@@ -22,9 +21,7 @@ export class Home extends Component {
                 <div>
                     {this.state.home.slice(19, 20).map(item =>(
                         <img src ={item.multimedia[0].url}  class = "img-fluid hero-img" alt = "#"/>
-
-                    ))
-                        
+                    ))                
                     }
                 </div>
 
