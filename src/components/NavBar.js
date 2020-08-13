@@ -7,7 +7,7 @@ export class NavBar extends Component {
     render() {
         return (
         <div>
-            <nav className = "navbar navbar-expand-md navbar-light bg-light sticky-top">    
+            <nav className = "navbar navbar-expand-md navbar-dark bg-light sticky-top">    
 	            <div className= "navbar-brand">News Room</div>
 	                <button
 	                type="button"
