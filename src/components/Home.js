@@ -70,7 +70,7 @@ export class Home extends Component {
                 {
                   <div className = "container">
                       <div className = "row">
-                            <div className = "col-xs-12 col-md-4 col-lg-4">                           
+                            <div className = "col-xs-12 col-md-6 col-lg-4">                           
                                 {this.state.home.slice(0, 1).map(item => (
                                     <div class="card card-topmost">
                                         <img src ={item.multimedia[0].url} class="card-img-top img-fluid" alt="..." />
@@ -82,7 +82,7 @@ export class Home extends Component {
                                    </div> 
                                 ))} 
                             </div>
-                            <div className = "col-xs-12 col-md-4 col-lg-4">
+                            <div className = "col-xs-12 col-md-6 col-lg-4">
                             {this.state.home.slice(1, 2).map(item => (
                                     <div class="card card-topmost">
                                         <img src ={item.multimedia[0].url} class="card-img-top img-fluid" alt="..." />
@@ -94,7 +94,7 @@ export class Home extends Component {
                                    </div> 
                                 ))}
                             </div>
-                            <div className = "col-xs-12 col-md-4 col-lg-4">
+                            <div className = "col-xs-12 col-md-6 col-lg-4">
                             {this.state.home.slice(2, 3).map(item => (
                                     <div class="card card-topmost">
                                         <img src ={item.multimedia[0].url} class="card-img-top img-fluid" alt="..." />
@@ -184,17 +184,17 @@ export class Home extends Component {
                                 {this.state.home.slice(10, 11).map(item => (
                                   <div>
                                     <div class = "row">
-                                        <div class = "col-md-6 col-lg-6">
+                                        <div class = "col-md-12 col-lg-6">
                                         <div class="card height">
                                             <div class="card-body bg-light text-dark">
                                                 <h3 class="card-title">{item.title}</h3>
                                                 <h5 class="card-text">{item.abstract}.</h5>
                                                 <a href={item.url} class="card-link">Continue</a> 
                                             </div>
-                                        </div>
+                                        </div><br/><br/><br/>
 
                                         </div>
-                                        <div class = "col-md-6 col-lg-6">
+                                        <div class = "col-md-12 col-lg-6">
                                         <div class="card height">
                                             <div class="card-body bg-light text-dark">
                                                 <h3 class="card-title">{item.title}</h3>
