@@ -10,7 +10,6 @@ export class BestSellers extends Component {
      axios.get('https://api.nytimes.com/svc/books/v3/lists/current/hardcover-fiction.json?api-key=OtN5TgEakuRqnuUsHHxWTfMISpfrrAV7')
      .then (res => {
          const getBooks = res.data.results.books
-         console.log(getBooks)
          this.setState({books: getBooks})
      })
    }

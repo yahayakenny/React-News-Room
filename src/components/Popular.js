@@ -10,7 +10,6 @@ export class Popular extends Component {
     componentDidMount(){
         axios.get('https://api.nytimes.com/svc/mostpopular/v2/viewed/1.json?api-key=OtN5TgEakuRqnuUsHHxWTfMISpfrrAV7')
         .then (res => {
-            console.log(res.data.results)
             const getPopular = res.data.results;
             this.setState({popular: getPopular})           
         })        
