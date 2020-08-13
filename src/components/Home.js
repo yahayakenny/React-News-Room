@@ -190,8 +190,8 @@ export class Home extends Component {
                                         <div class = "col-md-6 col-lg-6">
                                         <div class="card height">
                                             <div class="card-body bg-light text-dark">
-                                                <h4 class="card-title">{item.title}</h4>
-                                                <h6 class="card-text">{item.abstract}.</h6>
+                                                <h3 class="card-title">{item.title}</h3>
+                                                <h5 class="card-text">{item.abstract}.</h5>
                                                 <a href={item.url} class="card-link">Continue</a> 
                                             </div>
                                         </div>
@@ -200,8 +200,8 @@ export class Home extends Component {
                                         <div class = "col-md-6 col-lg-6">
                                         <div class="card height">
                                             <div class="card-body bg-light text-dark">
-                                                <h4 class="card-title">{item.title}</h4>
-                                                <h6 class="card-text">{item.abstract}.</h6>
+                                                <h3 class="card-title">{item.title}</h3>
+                                                <h5 class="card-text">{item.abstract}.</h5>
                                                 <a href={item.url} class="card-link">Continue</a> 
                                             </div>
                                         </div>
@@ -215,12 +215,12 @@ export class Home extends Component {
                             <div className = "col-xs-12 col-md-6 col-lg-6">
                             {this.state.home.slice(12, 13).map(item => (
                                     <div class="card card-bottom">
-                                        <img src ={item.multimedia[0].url} class="card-img-top img-fluid" alt="..." />
-                                        <div class="card-body card-dark"  >
-                                             <h4 class="card-title">{item.title}</h4>
-                                             <h5 class="card-text" >{item.abstract}</h5>
-                                            <h6 class="card-text"> {item.byline}</h6>     
-                                            <h6>{item.section}</h6>  
+                                        {/* <img src ={item.multimedia[0].url} class="card-img-top img-fluid" /> */}
+                                        <div class="card-body"  >
+                                             <h3 class="card-title">{item.title}</h3>
+                                             <h4 class="card-text" >{item.abstract}</h4>
+                                            <h5 class="card-text"> {item.byline}</h5>     
+                                            <h5>{item.section}</h5>  
                                         </div>
                                    </div> 
                                 ))}
