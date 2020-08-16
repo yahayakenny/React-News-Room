@@ -22,7 +22,7 @@ export class Home extends Component {
                     {this.state.home.slice(19, 20).map(item =>(
                         <img src ={item.multimedia[0].url}  class = "img-fluid hero-img" alt = "#"/>
                     ))                
-                    }
+                    }<br/><br/>
                 </div>
 
                 <div className = "padding">
@@ -55,14 +55,14 @@ export class Home extends Component {
                                             <div>
                                                 <h1>{item.title}</h1>
                                                 <p>{item.abstract}</p>
-                                                <p>{item.byline}</p>                                             
+                                                <p>{item.byline}</p>              
                                             </div>  
                                         ))
                                     }
                                 </div>
                             </div>
                         </div>
-                    }
+                    }<br/><br/>
                 </div>
 
 
@@ -85,10 +85,10 @@ export class Home extends Component {
                             <div className = "col-xs-12 col-md-6 col-lg-4">
                             {this.state.home.slice(1, 2).map(item => (
                                     <div class="card card-topmost">
-                                        <img src ={item.multimedia[0].url} class="card-img-top img-fluid" alt="..." />
-                                        <div class="card-body "  >
+                                        <img src ={item.multimedia[0].url} class="card-img-top img-fluid" alt="..."/>
+                                        <div class="card-body">
                                              <h4 class="card-title">{item.title}</h4>
-                                             <p class="card-text" >{item.abstract}</p>
+                                             <p class="card-text">{item.abstract}</p>
                                             <p class="card-text"> {item.byline}</p>                                     
                                         </div>
                                    </div> 
@@ -111,6 +111,7 @@ export class Home extends Component {
                }
                 </div> 
 
+
                 <div class = "padding">
                 {
                   <div className = "container">
@@ -123,7 +124,7 @@ export class Home extends Component {
                             <div className = "col-xs-12 col-md-4 col-lg-4">
                             {this.state.home.slice(9, 10).map(item => (
                                 <div>
-                                   <h1>{item.title}</h1>
+                                   <h2>{item.title}</h2>
                                    <h5>{item.byline}</h5>
                                    <h6>{item.published_date}</h6>
                                    <h6>{item.section}</h6>
@@ -135,7 +136,7 @@ export class Home extends Component {
                             <div className = "col-xs-12 col-md-4 col-lg-4">
                             {this.state.home.slice(10, 11).map(item => (
                                  <div>
-                                 <h1>{item.title}</h1>
+                                 <h2>{item.title}</h2>
                                 <h5>{item.byline}</h5>
                                 <h6>{item.published_date}</h6>
                                 <h6>{item.section}</h6>
@@ -147,6 +148,7 @@ export class Home extends Component {
                   </div>     
                }
                 </div>
+
 
                 <div class = "padding">
                 {
@@ -187,8 +189,8 @@ export class Home extends Component {
                                         <div class = "col-md-12 col-lg-6">
                                         <div class="card height">
                                             <div class="card-body bg-light text-dark">
-                                                <h3 class="card-title">{item.title}</h3>
-                                                <h5 class="card-text">{item.abstract}.</h5>
+                                                <h4 class="card-title">{item.title}</h4>
+                                                <h6 class="card-text">{item.abstract}.</h6>
                                                 <a href={item.url} class="card-link">Continue</a> 
                                             </div>
                                         </div><br/><br/><br/>
@@ -197,8 +199,8 @@ export class Home extends Component {
                                         <div class = "col-md-12 col-lg-6">
                                         <div class="card height">
                                             <div class="card-body bg-light text-dark">
-                                                <h3 class="card-title">{item.title}</h3>
-                                                <h5 class="card-text">{item.abstract}.</h5>
+                                                <h4 class="card-title">{item.title}</h4>
+                                                <h6 class="card-text">{item.abstract}.</h6>
                                                 <a href={item.url} class="card-link">Continue</a> 
                                             </div>
                                         </div>
@@ -211,14 +213,10 @@ export class Home extends Component {
 
                             <div className = "col-xs-12 col-md-6 col-lg-6">
                             {this.state.home.slice(12, 13).map(item => (
-                                    <div class="card card-bottom">
-                                        {/* <img src ={item.multimedia[0].url} class="card-img-top img-fluid" /> */}
-                                        <div class="card-body"  >
-                                             <h3 class="card-title">{item.title}</h3>
-                                             <h4 class="card-text" >{item.abstract}</h4>
-                                            <h5 class="card-text"> {item.byline}</h5>     
-                                            <h5>{item.section}</h5>  
-                                        </div>
+                                    <div>
+                                        <h2>{item.title}</h2>
+                                        <h3>{item.abstract}</h3>
+                                        <h5> {item.byline}</h5>          
                                    </div> 
                                 ))}
                             </div>

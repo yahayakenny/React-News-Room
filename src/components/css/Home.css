@@ -1,172 +1,167 @@
- html, body {
-    position: relative;
-    overflow-x: hidden; 
+html,
+body {
+  position: relative;
+  overflow-x: hidden;
 }
 
-.card-topmost{
-    margin-bottom: 50px;
-    height: 36rem !important;
-    width: 25rem !important;
-
+.card-topmost {
+  margin-bottom: 50px;
+  height: 36rem !important;
+  width: 25rem !important;
 }
 
 .navbar-nav li {
-    padding: 20px;
-
+  padding: 10px;
 }
 
 .card h4 {
-    font-size: 20px !important;
+  font-size: 20px !important;
 }
 
 .logo {
-    font-family: "raleway";
-    font-size: 40px;
-    margin-bottom: 30px;
+  font-family: 'raleway';
+  font-size: 40px;
+  margin-bottom: 30px;
 }
 
 .card-img-top {
-    height: 250px; 
+  height: 250px;
 }
 
 .card-title {
-    font-family: 'Raleway' !important;
-    font-weight: bolder !important;
-    font-size: 30px !important;
-}
-
-.card-dark {
-    color: white !important;
-    background-color: black !important;
+  font-family: 'Raleway' !important;
+  font-weight: bolder !important;
+  font-size: 30px !important;
 }
 
 .img-topmost {
-    width: 100%;
+  width: 100%;
 }
 
 .padding {
-    margin: 50px 0px;
+  margin: 20px 0px;
 }
 
 .card-bottom {
-    height: 35rem !important;
-    width: 40rem !important;
+  height: 35rem !important;
+  width: 40rem !important;
 }
-
-
-.height {
-    width: 100% !important;
-    height: 35rem !important;
-}
-
 
 footer {
-    background-color: #162838;
-    width: 100%;
-    height: 500px;
-    font-family: 'Raleway';
-  
-  }
-  
-  .email-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 20vh;
-  }
-  
-  .email-footer input {
-    width: 200px;
-    padding: 15px;
-    border: 1px solid white;
-    background-color: #162838;
-    color: white;
-  }
-
-  .email-footer button {
-    width: 80px;
-    background-color: #e52992;
-    padding: 10px;
-    border: none;
-    color: white;
-    font-weight: 400;
-    font-size: 10px;
-  }
-
-  
-  .social {
-    color: white;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 18px; 
-  }
-
-  .fab {
-    padding: 10px;
-    font-size: 28px;
-  }
-
-  .hours {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      color: white;
-  }
-
-  .copy {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-  
-  }
-  
-  .copy h6 {
-    font-size: 10px;
-  }
-
-  
-
-.hero-img {
-    margin-top: -40px !important;
+  background-color: #162838;
+  width: 100%;
+  height: 500px;
+  font-family: 'Raleway';
 }
 
- @media(max-width: 767px){
-     .col-sm-12 {
-        padding-bottom: 50px !important;
-     }
+.email-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+}
 
-     .card-topmost {
-        margin: 0 auto;
-        margin-bottom: 20px;
-        width: 80%;
-        
-    } 
+.email-footer input {
+  width: 200px;
+  padding: 15px;
+  border: 1px solid white;
+  background-color: #162838;
+  color: white;
+}
 
-    .card-bottom {
-        height: 35rem !important;
-        width: 80% !important;
-        margin: 0 auto;
-        margin-bottom: 20px;
-    }
+.email-footer button {
+  width: 80px;
+  background-color: #e52992;
+  padding: 10px;
+  border: none;
+  color: white;
+  font-weight: 400;
+  font-size: 10px;
+}
 
-    .card-img-top {
-        height: 200px;
-    }
+.social {
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 18px;
+}
 
-    .height {
-        width: 100% !important;
-        height: 25rem !important;
-        margin-bottom: 30px;
-        
-    }
+.fab {
+  padding: 10px;
+  font-size: 28px;
+}
 
+.hours {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
 
- }
-    
+.copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
 
- 
+.copy h6 {
+  font-size: 10px;
+}
+
+.hero-img {
+  margin-top: -40px !important;
+}
+
+.height {
+  width: 100% !important;
+  height: 20rem !important;
+  margin-bottom: 30px;
+  border-top: 4px solid maroon;
+}
+
+@media (max-width: 767px) {
+  .col-sm-12 {
+    padding-bottom: 50px !important;
+  }
+
+  .card-topmost {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 100% !important;
+    height: 33rem !important;
+  }
+
+  .card-bottom {
+    height: 35rem !important;
+    width: 80% !important;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .card-img-top {
+    height: 230px;
+  }
+
+  .height {
+    width: 100% !important;
+    height: 16rem !important;
+    margin-bottom: 30px;
+    border-top: 4px solid maroon;
+  }
+}
+
+@media only screen and (max-width: 1025px) and (min-width: 769px) {
+  .card-topmost {
+    margin-bottom: 50px;
+    height: 33rem !important;
+    width: 21rem !important;
+  }
+  .card-img-top {
+    height: 200px;
+  }
+}
