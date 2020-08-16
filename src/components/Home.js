@@ -117,8 +117,8 @@ export class Home extends Component {
                   <div className = "container">
                       <div className = "row">
                             <div className = "col-xs-12 col-md-4 col-lg-4">                           
-                                {this.state.home.slice(8, 9).map(item => (
-                                  <img src ={item.multimedia[0].url}  class = "img-fluid" alt = "#"/>
+                                {this.state.home.slice(22, 23).map(item => (
+                                  <img src ={item.multimedia[0].url}  class = "img-fluid" alt = "#" style = {{width: "100%", height:" 80%"}}/>
                                 ))} 
                             </div><br/><br/>
                             <div className = "col-xs-12 col-md-4 col-lg-4">
