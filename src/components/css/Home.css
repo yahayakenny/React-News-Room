@@ -4,6 +4,10 @@ body {
   overflow-x: hidden;
 }
 
+.hero-img {
+  min-height: 50vh !important;
+}
+
 .card-topmost {
   margin-bottom: 50px;
   height: 36rem !important;
@@ -58,7 +62,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 20vh;
+  height: 10vh;
 }
 
 .email-footer input {
@@ -85,7 +89,7 @@ footer {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 18px;
+ 
 }
 
 .fab {
@@ -158,10 +162,25 @@ footer {
 @media only screen and (max-width: 1025px) and (min-width: 769px) {
   .card-topmost {
     margin-bottom: 50px;
-    height: 33rem !important;
-    width: 21rem !important;
+    height: 35rem !important;
+    width: 23rem !important;
+    padding: 10px !important;
   }
   .card-img-top {
     height: 200px;
+  }
+}
+@media (min-width: 990px) and (max-width: 1200px) {
+  .card-topmost {
+    margin-bottom: 50px;
+    height: 35rem !important;
+    width: 23rem !important;
+    margin-left: 10px !important;
+  }
+  .card-topmost h4 {
+    font-size: 15px;
+  }
+  .card-topmost p {
+    font-size: 10px;
   }
 }

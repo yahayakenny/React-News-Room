@@ -25,12 +25,13 @@ export class Popular extends Component {
           style={{ fontSize: '100px !important', color: 'red' }}
         >
           TOP ARTICLES
-        </h1>
-        <br />
+        </h1><hr/>
+        <br /> 
         {this.state.popular.map((item) => (
           <div>
             <div class='container'>
               <div>
+              <br /> 
                 <h2 style={{ color: 'teal' }}>{item.title}</h2>
                 <p>Abstract: {item.abstract}</p>
                 <p>Column: {item.adx_keywords}</p>
@@ -38,10 +39,11 @@ export class Popular extends Component {
                 <a href={item.url}>Read more..</a>
               </div>
             </div>
-            <br />
-            <br />
+            <br /> <br /> <br /> <br /> 
+            <br /><hr/>
           </div>
         ))}
+        
       </div>
     );
   }
