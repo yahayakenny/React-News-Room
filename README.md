@@ -56,6 +56,6 @@ https://developer.nytimes.com/
 
 
 ## License
-Yahaya Kehinde 2020.
+Yahaya Kehinde 2020..
 
 
