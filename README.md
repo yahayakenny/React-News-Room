@@ -6,7 +6,7 @@ News Room is a multipage React.Js application for retrieving the latest news, be
 
 
 ## Demo
-![Screen-Recording-2020-09-04-at-1](https://user-images.githubusercontent.com/63402676/92229684-c1fdc300-eea1-11ea-90f0-ff389dd9a997.gif)
+
 
 
 ## Live Site
@@ -32,12 +32,12 @@ The live site can be viewed here https://react-newsroom.netlify.app/
 
 Clone the source locally:
 ```
-$ git clone 
+$ git clone https://github.com/yahayakenny/React-News-Room.git
 ```
 Move into the App directory:
 
 ```
-$ cd sportify
+$ cd react-news-room
 ```
 
 Install Dependencies:
@@ -52,21 +52,10 @@ $ npm start
 ```
 
 ### Related
-https://www.thesportsdb.com/api.php
+https://developer.nytimes.com/
 
 
 ## License
 Yahaya Kehinde 2020.
 
 
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
