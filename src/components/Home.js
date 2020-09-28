@@ -40,9 +40,9 @@ export class Home extends Component {
                                         ))
                                     }
                                 </div>
-                                <div className = " col-sm-12 col-md-4 col-lg-4">
+                                <div className = "col-sm-12 col-md-4 col-lg-4">
                                     {
-                                        this.state.home.slice(4, 5).map(item => (
+                                        this.state.home.slice(5, 6).map(item => (
                                             <div>
                                                  <img src = {item.multimedia[0].url} class  = "img-topmost" alt = "#"/>
                                             </div>  
