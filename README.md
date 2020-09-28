@@ -6,7 +6,7 @@ News Room is a multipage React.Js application for retrieving the latest news, be
 
 
 ## Demo
-
+![ezgif com-optimize-min](https://user-images.githubusercontent.com/63402676/92276093-4115ea00-eee8-11ea-90e7-aa38cc1e3fa6.gif)
 
 
 ## Live Site
@@ -56,6 +56,6 @@ https://developer.nytimes.com/
 
 
 ## License
-Yahaya Kehinde 2020..
+Yahaya Kehinde 2020.
 
 
